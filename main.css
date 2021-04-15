@@ -209,8 +209,16 @@ nav .main-badge img {
 }
 
 @media (max-width: 40rem) {
+  .container {
+    max-width: 36rem;
+  }
+
+  header {
+    height: 7rem;
+  }
+
   nav .main-badge img {
-    width: 15rem;
+    width: 10rem;
   }
 
   .nav-links {
@@ -226,10 +234,22 @@ nav .main-badge img {
     margin-top: 10rem;
   }
 
+  .head {
+    text-align: center;
+    font-size: 1.2rem;
+  }
   .pricing {
     flex-direction: column;
     width: 100%;
     align-items: center;
+  }
+
+  .features {
+    max-width: 36rem;
+  }
+
+  .video {
+    display: none;
   }
 
   .product {
