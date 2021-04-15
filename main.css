@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Lato, sans-serif;
   background: #eeeeee;
@@ -10,7 +16,7 @@ body {
 }
 
 header {
-  height: 5rem;
+  height: 4rem;
   position: fixed;
   width: 100%;
   top: 0;
@@ -107,9 +113,126 @@ nav .main-badge img {
 
 .features-content .desc {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  width: 80vw;
+  justify-content: center;
   height: 125px;
-  padding: 0.5rem;
+  width: 80vw;
+  padding: 5px;
+}
+
+.features-content .desc h2,
+.features-content .desc p {
+  margin: 0;
+}
+
+.video {
+  margin: 4rem auto;
+}
+
+.pricing {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 3);
+  align-items: center;
+  text-align: center;
+  border: 1px solid #000;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.product_head {
+  background: #dddddd;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 15px 0;
+}
+
+.product h2 {
+  margin-top: 1rem;
+}
+
+.product ol {
+  margin: 1rem 0;
+}
+
+.product ol li {
+  list-style: none;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.product .btn {
+  padding: 0.6rem;
+  width: 110px;
+  margin: 0.5rem 0;
+  border: none;
+  background: #f1c40f;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.product .btn:hover,
+.product .btn:focus {
+  background: #ffa500;
+}
+
+.footer {
+  margin-top: 30px;
+  background-color: #ddd;
+  padding: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.footer ul {
+  display: flex;
+  justify-content: center;
+}
+
+.footer li {
+  list-style: none;
+  margin-left: 1rem;
+}
+
+.footer li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (max-width: 40rem) {
+  nav .main-badge img {
+    width: 15rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    margin-right: 3rem;
+  }
+
+  .nav-links li {
+    padding-top: 7px;
+  }
+
+  .content {
+    margin-top: 10rem;
+  }
+
+  .pricing {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .product {
+    width: 50%;
+  }
 }
