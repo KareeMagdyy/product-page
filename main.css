@@ -259,6 +259,6 @@ nav .main-badge img {
   .footer {
     flex-direction: column;
     align-items: center;
-    max-width: 40rem;
+    width: 36rem;
   }
 }
